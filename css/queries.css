@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    section.about, section.portfolio {
+        height: auto;
+    }
+    section.about .body {
+        padding: 0 5rem;
+    }
+    section.about .skillsbars {
+        grid-template-columns: 1fr;
+    }
+    section.portfolio .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+    .footer .contact-info form {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.landing h2 {
+        font-size: 40px;
+    }
+    section.about, section.portfolio {
+        padding: 50px;
+    }
+    section.about .body {
+        padding: 0;
+    }
+    section.portfolio .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    section.about header, section.portfolio header {
+        font-size: 20px;
+    }
+    .footer .contact-image {
+        display: none;
+    }
+    .footer::before {
+        display: none;
+    }
+    .footer .contact-info {
+        width: 100%;
+    }
+    .footer .contact-info h1 {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.landing h1{
+        padding-bottom: 10px;
+    }
+    section.landing h2{
+        padding-bottom: 5px;
+    }
+    section.about, section.portfolio {
+        padding: 30px;
+    }
+    section.about .body p {
+        font-size: 15px;
+        text-align: center;
+    }
+    section.about .skillsbars .skills .name, section.about .skillsbars .skills .value {
+        font-size: 15px;
+    }
+    .footer .contact-info {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 350px) {
+    section.landing{
+        top: 40%;
+    }
+    section.navigators{
+        top: 55%;
+    }
+    section.landing h1 {
+        font-size: 25px;
+    }
+    section.landing h2 {
+        font-size: 30px;
+    }
+    section.landing p {
+        font-size: 15px;
+    }
+    section.about .skillsbars .skills {
+        padding: 10px;
+    }
+    section.about .skillsbars .skills .name, section.about .skillsbars .skills .value {
+        font-size: 13px;
+    }
+
+}
